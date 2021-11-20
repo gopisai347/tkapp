@@ -1,0 +1,18 @@
+ion-card {
+    margin: auto;
+    display: block;
+    position: absolute;
+  
+    width: 95%;
+    height: fit-content;
+  }
+  
+  img {
+    height: 250px;
+    width:100%;
+    display: fill;
+  }
+ 
+ion-item {
+  --min-height: 16px;
+}

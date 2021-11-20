@@ -1,5 +1,7 @@
 {
   "name": "tkapp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

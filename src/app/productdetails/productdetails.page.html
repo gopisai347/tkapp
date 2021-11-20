@@ -1,0 +1,97 @@
+<!-- <ion-content [fullscreen]="true">
+
+
+  <ion-slides [options]="option" class="ion-margin-top">
+    
+    
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/sample.jpg">
+      </ion-card>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/sample.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/sample.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/sample.jpg">
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/images/sample.jpg">
+      </ion-card>
+    </ion-slide>
+
+
+  </ion-slides>
+
+
+</ion-content> -->
+
+<ion-content>
+  <ion-grid>
+  <ion-row style="text-align: center;">
+    <ion-col size=3>
+      <ion-button  class="gridOneBtn" style="
+      --background: #010035;
+      ">
+      <img style="position: absolute;
+      width: 14px;
+      height: 7px;
+      border: 2px solid #FFFFFF;
+      transform: matrix(0, -1, -1, 0, 0, 0);" src="../../assets/images/product details grid oneVector (1).png">
+      </ion-button>
+    </ion-col>
+    <ion-col size=6></ion-col>
+    <ion-col size=3>
+      <ion-button class="gridOneBtn">f</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-slides  pager='true' [options]='slideOpts'>
+    <ion-slide  *ngFor="let i of [1,2,3,4]">
+      <img src="../../assets/images/sample.jpg">
+    </ion-slide>
+  </ion-slides>
+<div style="position: absolute;
+width: 414px;
+height: 471px;
+background: #FFFFFF;
+box-shadow: 0px -5px 20px rgba(76, 95, 143, 0.1);
+border-radius: 30px;">
+  <ion-grid>
+  <ion-row>
+    <ion-segment [(ngModel)]="segment" scrollable>
+      <ion-segment-button (ionSelect)="segmentButtonClicked($event)" value="first">
+        <ion-label>Friends</ion-label>
+      </ion-segment-button>
+      <ion-segment-button (ionSelect)="segmentButtonClicked($event)">
+        <ion-label>Enemies</ion-label>
+      </ion-segment-button>
+      <ion-segment-button (ionSelect)="segmentButtonClicked($event)">
+        <ion-label>Enemies</ion-label>
+      </ion-segment-button>
+
+    </ion-segment>
+
+    <div [ngSwitch]="segment">
+      <div *ngSwitchCase="'first'">
+        <p>dfvfgvgvhdv nvvhdnvdvhvdvvfhv jvhvvf</p>
+      </div>
+    </div>
+  </ion-row>
+</ion-grid>
+</div>
+</ion-grid>
+</ion-content>

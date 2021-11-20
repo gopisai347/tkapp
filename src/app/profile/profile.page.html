@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides [options]="slideOpts" >
+      <ion-slide *ngFor="let p of profiles " >
+
+      <ion-card> 
+        <img src="../../assets/profiles/img0{{p.image}}.jpg" (click)="onClickNavToDetails(p)">
+   
+ 
+
+        <ion-card-content style="background-color: white;" >
+          
+          <ion-card-title slot="start" >{{p.name}}</ion-card-title>
+          <ion-card-subtitle>{{p.content}}</ion-card-subtitle>
+  
+            <ion-button class="gridOneBtn" fill="round"   (click)="onClickNavToDetails(p)">Yes</ion-button>
+            <ion-button  class="gridOneBtn" fill="round"  >No</ion-button>
+       
+          
+        </ion-card-content>
+
+      </ion-card> 
+    </ion-slide>
+     
+
+  </ion-slides>
+
+
+  
+  <ion-item>
+    <ion-label style="color: white; font-weight: bold;" (click)="onClickNavToGesture()">New Profiles</ion-label>
+  </ion-item>
+
+</ion-content>
+
+ 

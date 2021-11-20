@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-60 -288) translate(15 288) translate(46)">
+                    <circle cx="11" cy="13" r="11" fill="#FFC107" stroke="#FFC107"/>
+                    <g transform="translate(15)">
+                        <circle cx="4.5" cy="4.5" r="4.5" fill="#00A149"/>
+                        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" d="M2.077 4.722L3.187 6.231 6.923 2.769"/>
+                    </g>
+                    <text fill="#262626" font-family="SFProText-Bold, SF Pro Text" font-size="11" font-weight="bold">
+                        <tspan x="7.46" y="17">2</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

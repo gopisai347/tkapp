@@ -1,0 +1,35 @@
+ion-content{
+    --ion-background-color:#E5E5E5;
+  }
+
+//   ion-item {
+//    --ion-background-color:: #FFFFFF !important;;
+//   }
+
+//   .item-background-color{
+//     // --ion-item-background:#FFFFFF;
+//     // background: transparent;
+//     // opacity: 0.5;
+    
+//     width:294px;
+    
+//     // opacity: 0.2;
+//     border-bottom: 0.587852px solid #03014C;
+    
+//     margin-left: 17px;
+
+// }
+.checkbox-icon {
+    border-radius: 0%!important
+}
+
+ion-input{
+    --placeholder-color: #36455A!important;
+    --placeholder-opacity: 1!important;
+    font-family: Work Sans;
+    --placeholder-font-style: normal;
+    --placeholder-font-weight: 500;
+    --placeholder-font-size: 14px;
+    --placeholder-width: 181px;
+    --placeholder-height: 19px;
+}

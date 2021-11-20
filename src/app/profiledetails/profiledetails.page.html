@@ -1,0 +1,157 @@
+<!-- 
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-header style="background-color: rgb(0,0,0,0.0); border-radius: 5px; position: fixed ;" >
+  <ion-toolbar> 
+    <ion-button  color="none"  slot="start" style="background-color: rgb(0,0,0,0.0); border-radius: 5px; position: fixed ;"  (click)="onClickNavigateToProducts()" size="default"   expand="block" fill="solid" > 
+      <ion-icon name="arrow-back-outline"></ion-icon>
+       {{paramResponse.name}}
+    </ion-button>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content>
+ 
+  <ion-grid>
+    <ion-slides [options]="slideOpts" style="max-height: 350px;">
+        <ion-slide style="display: flex;
+        justify-content: center;
+        align-items: center;"  *ngFor="let in of counter(5); let i = index " >
+
+          <img style="max-height: 100%; max-width: 100%; " src="../../assets/profiles/img0{{i}}.jpg" >
+
+        </ion-slide>  
+    </ion-slides>  
+
+ 
+      <ion-card style="background-color: white;   
+      border-radius: 5px; 
+      top: 42%; 
+      z-index: 99;   ">
+        <ion-row>
+          <ion-text  >{{paramResponse.name}}</ion-text>
+        </ion-row>
+  
+        <ion-row>
+          <ion-text>{{paramResponse.content}}</ion-text>
+        </ion-row> 
+    </ion-card>
+ 
+  </ion-grid>
+
+
+
+
+
+
+
+
+  <!-- <ion-slides style="max-height: 250px;"> 
+    <ion-slide style="display: flex;
+     justify-content: center;
+     align-items: center;" *ngFor="let in of counter(5); let i = index ">
+    
+     <img   src="../../assets/profiles/img0{{i}}.jpg" >
+     <ion-chip style="font-size: 12px;" color="white">
+       <ion-label color="light">Steve</ion-label>
+     </ion-chip>
+     <ion-item color="light" class="myitem" lines="none">
+       <h5>asdf</h5>
+       <ion-icon class="placeIcon" slot="end" color="primary" name="pin"></ion-icon>
+       <p style="font-size: 12px;" slot="end">sadf</p>
+     </ion-item>
+     <span class="myspan" style="font-size: 11px;">6 min ago</span>
+    
+   </ion-slide>
+   </ion-slides> -->
+
+
+<!-- <ion-content>
+  <ion-grid>
+    <ion-row>
+        <ion-slides [options]="slideOpts" style="max-height: 250px;">
+          <ion-slide style="display: flex;
+          justify-content: center;
+          align-items: center;"  *ngFor="let in of counter(5); let i = index " >
+    
+          <img style="display: fill;"  src="../../assets/profiles/img0{{i}}.jpg" >
+    
+          </ion-slide>  
+      </ion-slides>  
+    </ion-row>
+
+    <ion-row no-padding > 
+        <ion-card  no-padding style="background-color: white;  
+        border-radius: 5px; top:-10px; max-height: 100%;
+        z-index: 9;">
+          <ion-row>
+            <ion-text  >{{paramResponse.name}}</ion-text>
+          </ion-row>
+
+          <ion-row>
+            <ion-text>{{paramResponse.content}}</ion-text>
+          </ion-row> 
+      </ion-card>
+    </ion-row>
+
+  </ion-grid> -->
+
+
+
+  
+  <!-- <ion-card style="background-color: white;  position: absolute;
+    border-radius: 5px; top:0px;
+      z-index: 999;">
+      <ion-row>
+        <ion-text  >{{paramResponse.name}}</ion-text>
+      </ion-row>
+  
+      <ion-row>
+        <ion-text>{{paramResponse.content}}</ion-text>
+      </ion-row>
+  </ion-card> -->
+
+
+
+
+    
+
+
+
+<!-- <ion-card style="position: absolute; top: 20px; left: 50px; z-index: 99;">
+  <ion-grid >
+    <ion-row>
+      <ion-text  >{{paramResponse.name}}</ion-text>
+    </ion-row>
+
+    <ion-row>
+      <ion-text>{{paramResponse.content}}</ion-text>
+    </ion-row>
+  </ion-grid>
+</ion-card> -->
+<!-- <ion-slides style="max-height: 250px;"> 
+ <ion-slide style="display: flex;
+  justify-content: center;
+  align-items: center;" *ngFor="let in of counter(5); let i = index ">
+ 
+  <img   src="../../assets/profiles/img0{{i}}.jpg" >
+  <ion-chip style="font-size: 12px;" color="white">
+    <ion-label color="light">Steve</ion-label>
+  </ion-chip>
+  <ion-item color="light" class="myitem" lines="none">
+    <h5>asdf</h5>
+    <ion-icon class="placeIcon" slot="end" color="primary" name="pin"></ion-icon>
+    <p style="font-size: 12px;" slot="end">sadf</p>
+  </ion-item>
+  <span class="myspan" style="font-size: 11px;">6 min ago</span>
+ 
+</ion-slide>
+</ion-slides> -->
+</ion-content>
+
